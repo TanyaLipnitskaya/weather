@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --progress --colors",
-    "build:": "webpack --progress --colors"
+    "build": "webpack --progress --colors"
   },
   "devDependencies": {
     "path": "^0.12.7",
