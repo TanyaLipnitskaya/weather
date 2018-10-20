@@ -5,28 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Best Weather App You've Ever Seen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div>
-        <p>город:</p>
-        <span id="city"></span>
-    </div>
-    <div>
-        <p>Сейчас на улице: </p>
-        <span id="temp">
-        </span>
-        °С
-    </div>
-    <img id="icon" />
-    <div>
-        <p>Осадки:</p>
-        <span id="activeWeather"></span>
-    </div>
-    <div>
-        <p>Ветер:</p>
-        <span id="wind"></span>
-        м/с
+    <div class="app">
+        <div class="Tabs">
+            <button class="today active">Сегодня</button>
+            <button class="tomorrow">Завтра</button>
+            <button class="theDayAfterTomorrow">Послезавтра</button>
+        </div>
+        <div class="container">
+            <div>
+                <p>Город:</p>
+                <span id="city"></span>
+            </div>
+            <div>
+                <p>Сейчас на улице: </p>
+                <span id="temp">
+                </span>
+                °С
+            </div>
+            <img id="icon" />
+            <div>
+                <p>Осадки:</p>
+                <span id="activeWeather"></span>
+            </div>
+            <div>
+                <p>Ветер:</p>
+                <span id="wind"></span>
+                м/с
+            </div>
+        </div>
     </div>
     <script src="index.js"></script>
 
