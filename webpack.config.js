@@ -7,10 +7,15 @@ const devServer = {
 };
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    // но на самом деле нужно делать так:
+    // https://www.npmjs.com/package/serviceworker-webpack-plugin
+    sw: './src/sw.js',
+  },
   output: {
     path: join(__dirname, 'dist'),
-    filename: 'index.js',
+    filename: '[name].js',
     publicPath: '/',
   },
   mode: 'development',

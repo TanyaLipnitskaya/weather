@@ -1,5 +1,5 @@
-"use strict";
-importScripts("sw-toolbox.js");
+const toolbox = require('sw-toolbox');
+
 toolbox.precache(["index.html", "style.css", "index.js"]);
 toolbox.router.get("/icons/*", toolbox.cacheFirst);
 toolbox.router.get("/*", toolbox.networkFirst, {
