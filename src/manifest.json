@@ -1,0 +1,14 @@
+{
+    "name": "The Best Weather App You've Ever Seen",
+    "short_name": "BWAYES",
+    "lang": "ru-RU",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000",
+    "icons": [{
+        "src": "icons/homeicon.jpg",
+        "sizes": "600x600",
+        "type": "image/jpg"
+    }],
+    "background_color": "#000"
+}
